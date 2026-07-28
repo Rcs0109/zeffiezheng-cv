@@ -19,8 +19,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-gray-300">
               <li><Link to="/" className="hover:text-white transition-colors">首页</Link></li>
-              <li><Link to="/portfolio" className="hover:text-white transition-colors">作品集</Link></li>
-              <li><Link to="/diary" className="hover:text-white transition-colors">日记</Link></li>
+              <li><Link to="/portfolio" className="hover:text-white transition-colors">项目</Link></li>
+              <li><Link to="/diary" className="hover:text-white transition-colors">碎碎念</Link></li>
             </ul>
           </div>
 
