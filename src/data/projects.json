@@ -13,7 +13,7 @@
       "用户调研",
       "竞品分析"
     ],
-    "hidden": true
+    "hidden": false
   },
   {
     "id": "proj-2",
@@ -28,6 +28,6 @@
       "产品分析",
       "报告"
     ],
-    "hidden": true
+    "hidden": false
   }
 ]

@@ -13,7 +13,7 @@
       "Axure",
       "数据分析"
     ],
-    "hidden": true
+    "hidden": false
   },
   {
     "id": "exp-campus-1",
@@ -29,7 +29,7 @@
       "团队管理",
       "路演"
     ],
-    "hidden": true
+    "hidden": false
   },
   {
     "id": "exp-intern-2",
@@ -41,6 +41,6 @@
     "body": "详细内容……",
     "images": [],
     "tags": [],
-    "hidden": true
+    "hidden": false
   }
 ]
