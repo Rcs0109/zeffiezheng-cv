@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react'
 import ContentCard from '../components/ContentCard'
 import experiences from '../data/experiences.json'
 import projects from '../data/projects.json'
-import { isVisible } from '../data/utils'
+import { isItemVisibleToVisitor } from '../data/utils'
 
 const tabs = [
   { key: 'all', label: '全部' },
@@ -17,10 +17,10 @@ export default function Portfolio() {
 
   const allItems = useMemo(() => {
     const expItems = experiences
-      .filter((e) => isVisible(e))
+      .filter((e) => isItemVisibleToVisitor(e))
       .map((e) => ({ ...e, category: e.type }))
     const projItems = projects
-      .filter((p) => isVisible(p))
+      .filter((p) => isItemVisibleToVisitor(p))
       .map((p) => ({ ...p, category: p.type }))
     return [...expItems, ...projItems].sort((a, b) => {
       // Sort by date descending (latest first)

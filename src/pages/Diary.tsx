@@ -1,13 +1,13 @@
 import { useState, useMemo } from 'react'
 import diary from '../data/diary.json'
-import { isVisible } from '../data/utils'
+import { isItemVisibleToVisitor } from '../data/utils'
 
 export default function Diary() {
   const [expandedId, setExpandedId] = useState<string | null>(null)
 
   const visibleEntries = useMemo(() => {
     return diary
-      .filter((entry) => isVisible(entry))
+      .filter((entry) => isItemVisibleToVisitor(entry))
       .sort((a, b) => b.date.localeCompare(a.date))
   }, [])
 
