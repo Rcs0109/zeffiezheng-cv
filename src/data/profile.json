@@ -3,12 +3,13 @@
   "title": "我想你这样了解我",
   "bio": "做正确的选择 Make Right Choices",
   "shortBio": "欢迎认识我",
-  "email": "zhefengzheng530@gmail.com",
   "email": "15013413150@163.com",
   "github": "https://github.com/Rcs0109",
   "social": {
     "wechat": "Right_choices",
-    "Phone": "+86 15013413150",
-    "Phone": "+852 84956924"
+    "phone_cn": "+86 15013413150",
+    "phone_hk": "+852 84956924"
   },
- }
+  "quote": "\"产品不是做完的，是改完的。\"",
+  "quoteSource": "《结网》"
+}
