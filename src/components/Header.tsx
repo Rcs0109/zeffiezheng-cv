@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 const navItems = [
   { path: '/', label: '首页' },
-  { path: '/portfolio', label: '项目/作业' },
+  { path: '/portfolio', label: '项目' },
   { path: '/diary', label: '碎碎念' },
 ]
 
