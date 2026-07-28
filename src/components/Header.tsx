@@ -2,8 +2,8 @@ import { Link, useLocation } from 'react-router-dom'
 
 const navItems = [
   { path: '/', label: '首页' },
-  { path: '/portfolio', label: '作品集' },
-  { path: '/diary', label: '日记' },
+  { path: '/portfolio', label: '项目/作业' },
+  { path: '/diary', label: '碎碎念' },
 ]
 
 export default function Header() {
