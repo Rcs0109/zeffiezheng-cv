@@ -3,7 +3,7 @@ import profile from '../data/profile.json'
 
 export default function Footer() {
   return (
-    <footer className="bg-zeffie-black text-white">
+    <footer id="footer" className="bg-zeffie-black text-white">
       <div className="max-w-4xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo & Tagline */}
@@ -19,8 +19,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-gray-300">
               <li><Link to="/" className="hover:text-white transition-colors">首页</Link></li>
-              <li><Link to="/portfolio" className="hover:text-white transition-colors">项目</Link></li>
-              <li><Link to="/diary" className="hover:text-white transition-colors">碎碎念</Link></li>
+              <li><Link to="/portfolio" className="hover:text-white transition-colors">作品集</Link></li>
+              <li><Link to="/diary" className="hover:text-white transition-colors">日记</Link></li>
             </ul>
           </div>
 
@@ -37,10 +37,23 @@ export default function Footer() {
                   </a>
                 </li>
               )}
-              {profile.github && (
+              {profile.social?.wechat && (
+                <li className="flex items-center gap-2">
+                  <span className="text-gray-500">微信</span>
+                  <span>{profile.social.wechat}</span>
+                </li>
+              )}
+              {profile.social?.phone_cn && (
                 <li>
-                  <a href={profile.github} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                    GitHub
+                  <a href={`tel:${profile.social.phone_cn}`} className="hover:text-white transition-colors">
+                    中国 {profile.social.phone_cn}
+                  </a>
+                </li>
+              )}
+              {profile.social?.phone_hk && (
+                <li>
+                  <a href={`tel:${profile.social.phone_hk}`} className="hover:text-white transition-colors">
+                    香港 {profile.social.phone_hk}
                   </a>
                 </li>
               )}
@@ -52,9 +65,6 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-500">
             &copy; {new Date().getFullYear()} Zeffie Zheng. Built with product thinking.
-          </p>
-          <p className="text-xs text-gray-500 italic">
-            {profile.quote}
           </p>
         </div>
       </div>

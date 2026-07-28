@@ -13,17 +13,9 @@ export default function Home() {
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-zeffie-black mb-6 leading-tight">
             {profile.name}
           </h1>
-          <p className="text-lg text-zeffie-gray max-w-xl leading-relaxed mb-8">
+          <p className="text-lg text-zeffie-gray max-w-xl leading-relaxed mb-10">
             {profile.bio}
           </p>
-
-          {/* Quote */}
-          <blockquote className="border-l-2 border-zeffie-black pl-4 mb-10">
-            <p className="text-sm italic text-zeffie-gray">{profile.quote}</p>
-            {profile.quoteSource && (
-              <cite className="text-xs text-zeffie-muted not-italic mt-1 block">—— {profile.quoteSource}</cite>
-            )}
-          </blockquote>
 
           {/* CTA */}
           <div className="flex gap-4">
@@ -31,10 +23,10 @@ export default function Home() {
               to="/portfolio"
               className="inline-flex items-center px-5 py-2.5 bg-zeffie-black text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors"
             >
-              查看作品集
+              查看项目
             </Link>
             <a
-              href={`mailto:${profile.email}`}
+              href="#footer"
               className="inline-flex items-center px-5 py-2.5 border border-gray-300 text-zeffie-black text-sm font-medium rounded-lg hover:border-gray-500 transition-colors"
             >
               联系我
