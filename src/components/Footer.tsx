@@ -32,7 +32,8 @@ export default function Footer() {
             <ul className="text-sm text-gray-300 space-y-2 font-mono">
               {profile.email && (
                 <li className="grid grid-cols-[5rem_1fr] items-baseline">
-                  <span className="text-gray-500 text-xs uppercase tracking-wider text-right pr-3">email</span>
+                  {/* 将 text-right 改为 text-left，将 text-gray-500 改为 text-gray-300 */}
+                  <span className="text-gray-300 text-xs uppercase tracking-wider text-left pr-3">email</span>
                   <a href={`mailto:${profile.email}`} className="hover:text-white transition-colors">
                     {profile.email}
                   </a>
@@ -40,7 +41,7 @@ export default function Footer() {
               )}
               {profile.social?.wechat && (
                 <li className="grid grid-cols-[5rem_1fr] items-baseline">
-                  <span className="text-gray-500 text-xs uppercase tracking-wider text-right pr-3">wechat</span>
+                  <span className="text-gray-300 text-xs uppercase tracking-wider text-left pr-3">wechat</span>
                   <span className="hover:text-white transition-colors cursor-pointer" title="点击复制">
                     {profile.social.wechat}
                   </span>
@@ -48,7 +49,7 @@ export default function Footer() {
               )}
               {profile.social?.phone_cn && (
                 <li className="grid grid-cols-[5rem_1fr] items-baseline">
-                  <span className="text-gray-500 text-xs uppercase tracking-wider text-right pr-3">tel CN</span>
+                  <span className="text-gray-300 text-xs uppercase tracking-wider text-left pr-3">tel CN</span>
                   <a href={`tel:${profile.social.phone_cn}`} className="hover:text-white transition-colors">
                     {profile.social.phone_cn}
                   </a>
@@ -56,7 +57,7 @@ export default function Footer() {
               )}
               {profile.social?.phone_hk && (
                 <li className="grid grid-cols-[5rem_1fr] items-baseline">
-                  <span className="text-gray-500 text-xs uppercase tracking-wider text-right pr-3">tel HK</span>
+                  <span className="text-gray-300 text-xs uppercase tracking-wider text-left pr-3">tel HK</span>
                   <a href={`tel:${profile.social.phone_hk}`} className="hover:text-white transition-colors">
                     {profile.social.phone_hk}
                   </a>
