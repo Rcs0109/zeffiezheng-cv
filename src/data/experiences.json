@@ -8,8 +8,12 @@
     "description": "参与某某产品的需求分析、原型设计和项目跟进工作。",
     "body": "在这里详细描述你的实习经历、具体做了什么、取得了什么成果……",
     "images": [],
-    "tags": ["需求分析", "Axure", "数据分析"],
-    "hidden": false
+    "tags": [
+      "需求分析",
+      "Axure",
+      "数据分析"
+    ],
+    "hidden": true
   },
   {
     "id": "exp-campus-1",
@@ -20,8 +24,12 @@
     "description": "带领团队完成一款校园社交产品的设计与 Demo 开发，获得校赛一等奖。",
     "body": "详细描述比赛经历、团队分工、产品方案、成果……",
     "images": [],
-    "tags": ["产品设计", "团队管理", "路演"],
-    "hidden": false
+    "tags": [
+      "产品设计",
+      "团队管理",
+      "路演"
+    ],
+    "hidden": true
   },
   {
     "id": "exp-intern-2",
@@ -33,6 +41,6 @@
     "body": "详细内容……",
     "images": [],
     "tags": [],
-    "hidden": false
+    "hidden": true
   }
 ]
