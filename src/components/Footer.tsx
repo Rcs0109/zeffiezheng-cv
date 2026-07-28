@@ -20,40 +20,45 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-300">
               <li><Link to="/" className="hover:text-white transition-colors">首页</Link></li>
               <li><Link to="/portfolio" className="hover:text-white transition-colors">项目</Link></li>
-              <li><Link to="/diary" className="hover:text-white transition-colors">碎碎念</Link></li>
+              <li><Link to="/diary" className="hover:text-white transition-colors">日记</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
             <h4 className="text-sm font-medium uppercase tracking-wider text-gray-400 mb-3">
-              联系我
+              联系方式
             </h4>
-            <ul className="space-y-2 text-sm text-gray-300">
+            <ul className="text-sm text-gray-300 space-y-2 font-mono">
               {profile.email && (
-                <li>
+                <li className="grid grid-cols-[5rem_1fr] items-baseline">
+                  <span className="text-gray-500 text-xs uppercase tracking-wider text-right pr-3">email</span>
                   <a href={`mailto:${profile.email}`} className="hover:text-white transition-colors">
-                    email {profile.email}
+                    {profile.email}
                   </a>
                 </li>
               )}
               {profile.social?.wechat && (
-                <li className="flex items-center gap-2">
-                  <span className="text-gray-500">Wechat</span>
-                  <span>{profile.social.wechat}</span>
+                <li className="grid grid-cols-[5rem_1fr] items-baseline">
+                  <span className="text-gray-500 text-xs uppercase tracking-wider text-right pr-3">wechat</span>
+                  <span className="hover:text-white transition-colors cursor-pointer" title="点击复制">
+                    {profile.social.wechat}
+                  </span>
                 </li>
               )}
               {profile.social?.phone_cn && (
-                <li>
+                <li className="grid grid-cols-[5rem_1fr] items-baseline">
+                  <span className="text-gray-500 text-xs uppercase tracking-wider text-right pr-3">tel CN</span>
                   <a href={`tel:${profile.social.phone_cn}`} className="hover:text-white transition-colors">
-                    tel {profile.social.phone_cn}
+                    {profile.social.phone_cn}
                   </a>
                 </li>
               )}
               {profile.social?.phone_hk && (
-                <li>
+                <li className="grid grid-cols-[5rem_1fr] items-baseline">
+                  <span className="text-gray-500 text-xs uppercase tracking-wider text-right pr-3">tel HK</span>
                   <a href={`tel:${profile.social.phone_hk}`} className="hover:text-white transition-colors">
-                    tel {profile.social.phone_hk}
+                    {profile.social.phone_hk}
                   </a>
                 </li>
               )}
