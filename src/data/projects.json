@@ -1,0 +1,26 @@
+[
+  {
+    "id": "proj-1",
+    "title": "某某产品需求文档 (PRD)",
+    "type": "project",
+    "date": "2026.05",
+    "role": "独立完成",
+    "description": "完成一份完整的 PRD，涵盖用户调研、竞品分析、功能规划、原型设计。",
+    "body": "详细描述这个项目的背景、目标、过程、成果、反思……",
+    "images": [],
+    "tags": ["PRD", "用户调研", "竞品分析"],
+    "hidden": false
+  },
+  {
+    "id": "proj-2",
+    "title": "某某课程大作业 — 产品分析报告",
+    "type": "assignment",
+    "date": "2026.04",
+    "role": "小组负责人",
+    "description": "对某款产品进行深度分析，输出产品分析报告与改进建议。",
+    "body": "详细描述作业内容……",
+    "images": [],
+    "tags": ["产品分析", "报告"],
+    "hidden": false
+  }
+]

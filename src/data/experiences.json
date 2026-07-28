@@ -1,0 +1,38 @@
+[
+  {
+    "id": "exp-intern-1",
+    "title": "产品实习生 — 某互联网公司",
+    "type": "internship",
+    "date": "2026.06 - 至今",
+    "role": "产品实习生",
+    "description": "参与某某产品的需求分析、原型设计和项目跟进工作。",
+    "body": "在这里详细描述你的实习经历、具体做了什么、取得了什么成果……",
+    "images": [],
+    "tags": ["需求分析", "Axure", "数据分析"],
+    "hidden": false
+  },
+  {
+    "id": "exp-campus-1",
+    "title": "某某大学 产品设计大赛 — 一等奖",
+    "type": "campus",
+    "date": "2026.03",
+    "role": "队长 / 产品负责人",
+    "description": "带领团队完成一款校园社交产品的设计与 Demo 开发，获得校赛一等奖。",
+    "body": "详细描述比赛经历、团队分工、产品方案、成果……",
+    "images": [],
+    "tags": ["产品设计", "团队管理", "路演"],
+    "hidden": false
+  },
+  {
+    "id": "exp-intern-2",
+    "title": "第二段实习经历",
+    "type": "internship",
+    "date": "2025.12 - 2026.02",
+    "role": "产品助理",
+    "description": "简单描述这段实习……",
+    "body": "详细内容……",
+    "images": [],
+    "tags": [],
+    "hidden": false
+  }
+]

@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --color-zeffie-black: #1a1a1a;
+  --color-zeffie-gray: #6b7280;
+  --color-zeffie-light: #f5f5f5;
+  --color-zeffie-accent: #2d3748;
+  --color-zeffie-muted: #9ca3af;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #1a1a1a;
+  color: white;
+}
