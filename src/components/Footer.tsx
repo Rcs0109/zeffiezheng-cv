@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import profile from '../data/profile.json'
 
 export default function Footer() {
@@ -17,9 +18,9 @@ export default function Footer() {
               快速链接
             </h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li><a href="/" className="hover:text-white transition-colors">首页</a></li>
-              <li><a href="/portfolio" className="hover:text-white transition-colors">作品集</a></li>
-              <li><a href="/diary" className="hover:text-white transition-colors">日记</a></li>
+              <li><Link to="/" className="hover:text-white transition-colors">首页</Link></li>
+              <li><Link to="/portfolio" className="hover:text-white transition-colors">作品集</Link></li>
+              <li><Link to="/diary" className="hover:text-white transition-colors">日记</Link></li>
             </ul>
           </div>
 

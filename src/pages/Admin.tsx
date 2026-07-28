@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState, useEffect, useCallback } from 'react'
 import experiences from '../data/experiences.json'
 import projects from '../data/projects.json'
@@ -89,12 +90,12 @@ export default function Admin() {
             </p>
           </div>
           <div className="flex gap-3">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="px-4 py-2 text-sm text-zeffie-gray hover:text-zeffie-black border border-gray-300 rounded-lg transition-colors"
             >
               查看首页
-            </a>
+            </Link>
           </div>
         </div>
 

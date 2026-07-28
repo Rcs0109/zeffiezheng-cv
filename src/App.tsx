@@ -8,7 +8,7 @@ import Admin from './pages/Admin'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/zeffiezheng-cv">
       <div className="min-h-screen flex flex-col">
         <Header />
         <div className="flex-1">
