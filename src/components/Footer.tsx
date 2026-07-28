@@ -33,27 +33,27 @@ export default function Footer() {
               {profile.email && (
                 <li>
                   <a href={`mailto:${profile.email}`} className="hover:text-white transition-colors">
-                    {profile.email}
+                    email {profile.email}
                   </a>
                 </li>
               )}
               {profile.social?.wechat && (
                 <li className="flex items-center gap-2">
-                  <span className="text-gray-500">微信</span>
+                  <span className="text-gray-500">Wechat</span>
                   <span>{profile.social.wechat}</span>
                 </li>
               )}
               {profile.social?.phone_cn && (
                 <li>
                   <a href={`tel:${profile.social.phone_cn}`} className="hover:text-white transition-colors">
-                    中国 {profile.social.phone_cn}
+                    tel {profile.social.phone_cn}
                   </a>
                 </li>
               )}
               {profile.social?.phone_hk && (
                 <li>
                   <a href={`tel:${profile.social.phone_hk}`} className="hover:text-white transition-colors">
-                    香港 {profile.social.phone_hk}
+                    tel {profile.social.phone_hk}
                   </a>
                 </li>
               )}
